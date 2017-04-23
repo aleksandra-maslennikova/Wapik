@@ -1,0 +1,91 @@
+@body-bg: #fff;
+@heading-font-family: @global-font-family;
+@heading-font-weight: 400;
+@heading-color: inherit ;
+@heading-font-size-1: 31px;
+@heading-margin-1: 1em 0;
+@heading-font-size-2: 26px;
+@heading-margin-2: 1em 0;
+@heading-font-size-3: 20px;
+@heading-margin-3: 1em 0;
+@heading-font-size-4: 18px;
+@heading-margin-4: 1em 0;
+@heading-font-size-5: 14px;
+@heading-margin-5: 1em 0;
+@heading-font-size-6: 12px;
+@heading-margin-6: 1em 0;
+
+html {
+	font-family: @global-font-family;
+	font-size: @global-font-size;
+	line-height: @global-line-height;
+	color: @global-color;
+}
+
+a {
+	color: @global-link-color;
+	&:hover {
+		color: @global-link-hover-color;
+	}
+}
+body{
+	background: @body-bg;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: @heading-font-family;
+    font-weight: @heading-font-weight;
+    color: @heading-color;
+}
+
+h1,
+.h1 {
+    font-size: @heading-font-size-1;
+    margin: @heading-margin-1;
+}
+
+h2,
+.h2 {
+    font-size: @heading-font-size-2;
+    margin: @heading-margin-2;
+}
+
+h3,
+.h3 {
+    font-size: @heading-font-size-3;
+    margin: @heading-margin-3;
+}
+
+h4,
+.h4 {
+    font-size: @heading-font-size-4;
+    margin: @heading-margin-4;
+}
+
+h5,
+.h5 {
+    font-size: @heading-font-size-5;
+    margin: @heading-margin-5;
+}
+
+h6,
+.h6 {
+    font-size: @heading-font-size-6;
+    margin: @heading-margin-6;
+}
+
+.hook-type-misc();
+
+.hook-type-misc() {};

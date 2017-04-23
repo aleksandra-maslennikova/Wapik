@@ -1,0 +1,46 @@
+@import 'variables.less';
+.section {
+	position: relative;
+	z-index: 1;
+	.hook-section();
+	&-header {
+		.hook-section-header();
+	}
+	&-body {
+		.hook-section-body();
+	}
+	&-footer {
+		.hook-section-footer();
+	}
+	&-heading {
+		.hook-section-heading();
+	}
+	&-description {
+		.hook-section-description();
+	}
+	&-overlay {
+		background-size: cover;
+		background-position: 50% 50%;
+		background-color: inherit;
+		display: flex;
+		flex: 1 1 auto;
+		z-index: -100;
+		.hook-section-overlay();
+	}
+	&-fill-height {
+		min-height: 100vh;
+		.hook-section-fill-height();
+	}
+}
+
+.hook-section-misc();
+
+.hook-section() {};
+.hook-section-header() {};
+.hook-section-body() {};
+.hook-section-footer() {};
+.hook-section-heading() {};
+.hook-section-description() {};
+.hook-section-overlay() {};
+.hook-section-fill-height() {};
+.hook-section-misc() {};
